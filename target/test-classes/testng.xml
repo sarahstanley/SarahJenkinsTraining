@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="mySuite" parallel="methods" thread-count="3" data-provider-thread-count="3">
+
+    <parameter name="runLocally" value="true"/>
+    <parameter name="chromeDriverPath" value="C:\SeleniumDrivers\chromedriver.exe"/>
+    <parameter name="browser" value="chrome"/>
+    <test name="myTests">
+        <classes>
+            <class name="my.samples.AppTest" />
+        </classes>
+    </test>
+
+</suite>
